@@ -10,11 +10,10 @@ public class Main {
 
         ArrayList<Commande> commandes = new ArrayList<>();
 
-        // ⭐ NOUVEAUX SERVEURS
         ArrayList<Serveur> serveurs = new ArrayList<>();
-        serveurs.add(new Serveur(1, "Moussa", "Homme", "Dakar"));
-        serveurs.add(new Serveur(2, "Fatou", "Femme", "Thies"));
-        serveurs.add(new Serveur(3, "Ibrahima", "Homme", "Saint-Louis"));
+        serveurs.add(new Serveur(1, "Mohamed", "Homme", "Dakar"));
+        serveurs.add(new Serveur(2, "Fadel", "Femme", "Thies"));
+        serveurs.add(new Serveur(3, "Youssef", "Homme", "Saint-Louis"));
 
         int choix;
 
@@ -37,7 +36,7 @@ public class Main {
                     break;
 
                 case 2:
-                    // ⭐ demander à l'utilisateur le serveur
+                    
                     Serveur servChoisi = GestionCommande.choisirServeur(serveurs);
                     Commande c = GestionCommande.creerCommande(commandes.size() + 1, servChoisi);
                     commandes.add(c);
@@ -69,7 +68,7 @@ public class Main {
                     break;
 
                 default:
-                    System.out.println("❌ Erreur : choix invalide !");
+                    System.out.println("Erreur : choix invalide !");
             }
 
         } while (choix != 9);
