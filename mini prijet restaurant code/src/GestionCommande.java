@@ -48,7 +48,7 @@ public class GestionCommande {
                 double prix = Double.parseDouble(parts[1].replace(" MAD", ""));
 
                 listePlat.add(new Plat(nom, prix));
-                System.out.println("✔ Plat ajouté !");
+                System.out.println(" Plat ajouté !");
             }
 
             else if(choix ==0) {
