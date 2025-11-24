@@ -12,7 +12,7 @@ public class Main {
 
         ArrayList<Serveur> serveurs = new ArrayList<>();
         serveurs.add(new Serveur(1, "Mohamed", "Homme", "Dakar"));
-        serveurs.add(new Serveur(2, "Fadel", "Femme", "Thies"));
+        serveurs.add(new Serveur(2, "Fadel", "Homme", "Thies"));
         serveurs.add(new Serveur(3, "Youssef", "Homme", "Saint-Louis"));
 
         int choix;
